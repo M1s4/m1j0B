@@ -628,3 +628,21 @@ b.data-policy {
     font-family: "Source Sans Pro bold";
     font-size: 15px;
 }
+button.btn.tour {
+    margin-top: 0px;
+}
+
+.btn-ride.right:hover {
+    background-color: #7718DD;
+}
+
+.image-citie {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+
+.image-citie:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
