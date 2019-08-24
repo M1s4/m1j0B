@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="css/search.css">
 </head>
 <body>
+    
 
     <div class="main-container-general">
             <aside class="menu">
                     <div class="main-container-aside">
                        <div class="content-image">
-                           <img src="images/icons/car.svg" alt="">
+                           <img src="images/icons/car.svg" alt="" onload="loadImage()">
                        </div>
             
                        <div class="content-form">
@@ -29,8 +30,8 @@
                                     </select>
                                     <input class="element " type="text" placeholder="Pickup Location (address or location name)">
                                     <input class="element " type="date" placeholder="Tour date">
-                                    <input class="element " type="number" class="input-adult" placeholder="Adults">
-                                    <input class="element " type="number" class="input-children" placeholder="Childrens (age 0-12)">
+                                    <input class="element adult" type="number" class="input-adult" placeholder="Adults">
+                                    <input class="element adult" type="number" class="input-children" placeholder="Childrens (age 0-12)">
                                     <input class="submit-btn"type="submit" value="FILTER TOURS">
                                </div>
             
@@ -60,37 +61,17 @@
             
                 <section class="tours">
                     <div class="main-container-tours">
-                        <div class="content-tours-list">
-                                <h3>ALL AVAILABLE TOURS</h3>
+                            <h3 class="title-content-tours">ALL AVAILABLE TOURS</h3>
+                        <div class="content-tours-list"  id="contentTour" >
+                               
 
-                                <div class="content-tour">
-                                  
-                                    <div class="image-tour">
-                                       <img src="images/destination1.png" alt="">
-                                   </div>
 
-                                   <div class="data-tour">
-                                       <b class="data name"> Sayulita</b>
-                                       <b class="data includes"> TRIP INCLUDES</b>
-                                       <b class="data hours">  - 4 hours total time trip </b>
-                                       <b class="data pickup"> - Pick up at your hotel  </b>
-                                       <b class="data complimentary">- Complimentary beverage (water and beer). </b>
-            
-                                   </div>
-
-                                   <div class="content-price">
-                                       <b class="price-usd">
-                                            $50.00 USD
-                                       </b>
-
-                                       <div class="content-btn">
-                                            BOOK
-                                       </div>
-
-                                   </div>
-                                </div>
+                                
+                                
                         </div>
             
+
+                       
                         
                     </div>  
                 </section>
@@ -98,6 +79,58 @@
     </div>
 
     
-    
+    <script>
+        var contenido = document.querySelector('#contentTour')
+         
+        function loadImage() {
+
+               fetch('js/tours.json')
+               .then(res => res.json())
+               .then(datos =>{
+                       tabla(datos)               
+               })
+            }
+
+
+       function tabla(datos) {
+               contenido.innerHTML = ''  
+                   for(let valor of datos){
+                      console.log(valor)
+                       contenido.innerHTML += `
+                          
+                       <div class="content-tour" >
+                                  
+                                  <div class="image-tour">
+                                     <img src="images/destination1.png" alt="">
+                                 </div>
+
+                                 <div class="data-tour">
+                                     <b class="data name"> ${valor.name}</b>
+                                     <b class="data includes"> TRIP INCLUDES</b>
+                                     <b class="data hours"> ${valor.hours} </b>
+                                     <b class="data pickup"> ${valor.pickup}  </b>
+                                     <b class="data complimentary">${valor.complimentary}</b>
+          
+                                 </div>
+
+                                 <div class="content-price">
+                                     <b class="price-usd">
+                                          $50.00 USD
+                                     </b>
+
+                                     <div class="content-btn">
+                                          BOOK
+                                     </div>
+
+                                 </div>
+                              </div>
+                       
+                       
+                       `
+                    
+                   }
+        }
+
+         </script>
 </body>
 </html>

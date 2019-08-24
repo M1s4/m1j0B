@@ -106,7 +106,7 @@ section.tours {
     padding: 80px 0px 0px 60px;
 }
 
-.content-tours-list h3 {
+.title-content-tours {
     font-family: "SourceSansPro Regular";
     font-size: 32px;
     font-weight: 100;
@@ -123,10 +123,11 @@ section.tours {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     margin-left: 40px;
     padding: 15px 15px;
+    margin-bottom: 10px;
 }
 
 .data-tour {
-    width: 320px;
+    width: 630px; 
     padding-left: 10px;
 }
 
@@ -148,7 +149,6 @@ b.data.includes {
 
 .content-price {
     width: 100%;
-    padding-left: 128px;
 }
 
 
@@ -170,4 +170,9 @@ b.price-usd {
     font-weight: 400;
     padding-left: 186px;
     padding-right: 20px;
+}
+
+input.element.adult {
+    width: 177px;
+    display: inline-block;
 }
