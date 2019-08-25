@@ -700,9 +700,9 @@ button.btn.tour {
         top: 25px;    }
     
     img.illustracion1 {
-        left: 57%;
-        top: 16%;
-        width: 275px;
+        left: 51%;
+        top: -2%;
+        width: 324px;
         height: 286px;
     }
     
@@ -761,6 +761,7 @@ button.btn.tour {
         flex-direction: column;
         height: auto;
         padding-top: 280px;
+        overflow: hidden;
     }
 
     .tripadvisor-main{
@@ -773,6 +774,7 @@ button.btn.tour {
         font-family: "Source Sans Pro semibold";
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
     }
      
     .inner-content-info.left {
@@ -801,7 +803,81 @@ button.btn.tour {
     .inner-content-info.center {
         display: none;
     }
+
+    .inner-content-info .culture{
+        text-align: center;
+    }
    
+    .inner-content-info.right {
+        width: 370px;
+                display: flex;
+        justify-content: center;
+
+    }
+
+    .main-container-cities h3 {
+        font-size: 18px;
+        width: 200px;
+        text-align: center;
+    }
+
+    .main-container-cities {
+        padding-top: 31px;
+    }
+
+    .main-container-cities b{
+        font-size: 12px;
+
+    }
+
+    .content-citie {
+        width: 295px;
+        padding: 0px 40px;
+         }
+         .content-images-cities{
+             padding-top:0px;
+             flex-direction: column;
+             width: 375px;
+         }
      
+         .image-citie{
+            filter: grayscale(0%);
+            opacity: 1;
+            border-radius:5px;
+
+         }
+
+         .main-container-footer h3 {
+            width: 295px;
+            font-size: 18px;
+        }
+
+        .type-services {
+            flex-direction: column;
+            width: 370px;
+        }
+
+        .service{
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
+        .content-policy {
+            text-align: center;
+            display: flex;
+            flex-direction: column-reverse;
+            width: 375px;
+            height: 180px;
+            padding: 80px 0px 40px 0px;
+        }
+
+        b.data-policy.booking {
+            display: none;
+        }
+
+        b.data-policy.privacy {
+            display: none;
+        }
 
     }
