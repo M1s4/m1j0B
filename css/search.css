@@ -112,6 +112,8 @@ section.tours {
     font-weight: 100;
     letter-spacing: 1.6px;
     color: #2A2A2A;
+    display: inline-block;
+    margin: 80px 0px 0px 60px;
 }
 
 .content-tour {
@@ -168,7 +170,7 @@ b.price-usd {
     font-family: "SourceSansPro Regular";
     font-size: 16px;
     font-weight: 400;
-    padding-left: 186px;
+    padding-left: 160px;
     padding-right: 20px;
 }
 

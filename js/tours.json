@@ -1,27 +1,40 @@
 
 [
     {
+        "ruta":"../images/destination1.png",
         "name":"Puerto Vallarta",
         "hours": "- 4 hours total time trip",
         "pickup": "- Pick up at your hotel ",
-        "complimentary":"Complimentary beverage (water and beer)." 
+        "complimentary":"Complimentary beverage (water and beer).",
+        "cost":50 
+        
     },
     {
+        "ruta":"../images/destination2.png",
         "name":"Botanical Garden",
         "hours": "- 4 hours total time trip",
         "pickup": "- Pick up at your hotel ",
-        "complimentary":"Complimentary beverage (water and beer)." 
+        "complimentary":"Complimentary beverage (water and beer)." ,
+        "cost":50
+        
     },
     {
+        "ruta":"../images/destination1.png",
         "name":"Guadalajara",
         "hours": "- 4 hours total time trip",
         "pickup": "- Pick up at your hotel ",
-        "complimentary":"Complimentary beverage (water and beer)." 
+        "complimentary":"Complimentary beverage (water and beer)." ,
+        "cost":250
+       
+
     },
     {
+        "ruta":"../images/destination2.png",
         "name":"San Sebastian del Oeste",
         "hours": "- 4 hours total time trip",
         "pickup": "- Pick up at your hotel ",
-        "complimentary":"Complimentary beverage (water and beer)." 
+        "complimentary":"Complimentary beverage (water and beer).",
+        "cost":80
+        
     }
 ]

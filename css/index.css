@@ -300,13 +300,13 @@ img.illustracion2{
 
 }
 
-.tripadvisor .inner-content-info .drivers{
+ .inner-content-info .drivers{
    width:308px;
    font-size: 32px;
    font-family: "Source Sans Pro semibold";
 }
 
-.tripadvisor .inner-content-info .culture{
+ .inner-content-info .culture{
     width:308px;
 
  font-size: 16px;
@@ -647,3 +647,161 @@ button.btn.tour {
     opacity: 1;
 }
 
+
+@media  (min-width: 375px) and (max-height: 667px) {
+    .div-inner-menu.right {
+        display: none;
+    }
+
+    .content-icon img {
+        width: 43px;
+    }
+    .div-inner-menu.left .content-icon {
+        width: 180px;
+    }
+
+    b.text-satysfy {
+        font-family: "satisfy";
+        font-size: 18px;
+        font-weight: 100;
+    }
+    .div-inner-menu.left .content-text {
+        font-family: "Source Sans Pro";
+        font-size: 12px;
+        width: 180px;
+        font-weight: 400 !important;
+        letter-spacing: 0px;
+    }
+
+    .div-inner-menu.left {
+        width: 180px;
+        text-align: center;
+        margin: 0px 0px;
+        padding: 20px 0px 0px 0px;
+        display: flex;
+        justify-content: center;
+        margin-left: 78px;
+    }
+
+    .div-inner-menu.center {
+        width: auto;
+    }
+
+    .menu-container {
+        height: 122px;  
+        max-width: 335px;
+     }
+
+     img.illustracion2 {
+        position: absolute;
+        left: -36%;
+        width: 311px;
+        height: 200px;
+        top: 25px;    }
+    
+    img.illustracion1 {
+        left: 57%;
+        top: 16%;
+        width: 275px;
+        height: 286px;
+    }
+    
+
+    .tittle-rides {
+        /* max-width: 500px; */
+        width: 295px;
+        max-height: 120px;
+        font-family: "Source Sans Pro";
+        font-size: 18px;
+        color: #2A2A2A;
+        text-align: center;
+        font-weight: 700;
+        opacity: 1;
+        text-align: center;
+        /* margin-top: 80px; */
+        margin-left: auto;
+        margin-right: auto;
+        color: #2A2A2A;
+        margin-top:0px;
+    }
+
+    .rides{
+        margin-top: 280px;
+    }
+
+    .question{
+        font-size: 14px;            
+        max-width: 295px;
+        text-align: center;
+        letter-spacing: 0.7px;
+        padding: 21px 0px;
+        border: 1px solid #C51745;
+        border-radius: 6px;
+    }
+
+    .btn-rides {
+        display: none;
+    }
+
+    p.info-move {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px; 
+        margin-bottom: 40px;
+        max-width: 295px;
+        text-align: center;
+        font-family: "SourceSansPro Regular";
+        font-size: 12px;
+        color: #2A2A2A;
+    }
+
+
+    .tripadvisor{
+        flex-direction: column;
+        flex-direction: column;
+        height: auto;
+        padding-top: 280px;
+    }
+
+    .tripadvisor-main{
+        padding-top: 30px;
+    }
+
+    .inner-content-info .drivers {
+        width: 200px;
+        font-size: 18px;
+        font-family: "Source Sans Pro semibold";
+        margin-left: auto;
+        margin-right: auto;
+    }
+     
+    .inner-content-info.left {
+        text-align: right;
+        width: 295px;
+        /* margin-top: 40px; */
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 10px;
+        
+        background-image: url('../images/icons/tripadvisor_prize.svg');
+        background-repeat: no-repeat;
+        background-size: 93px;
+        background-position-x: 18px;
+        background-position-y: 167px;
+    }
+
+    .stars-tripadvisor.ta{
+        width: 105px;
+        text-align: left;
+    }
+    .stars-tripadvisor.fb{
+        width: 108px;
+    }
+
+    .inner-content-info.center {
+        display: none;
+    }
+   
+     
+
+    }

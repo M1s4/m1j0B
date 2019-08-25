@@ -7,32 +7,36 @@
     <title>search tour</title>
     <link rel="stylesheet" href="css/search.css">
 </head>
-<body>
+<body onload="addList()">
     
 
     <div class="main-container-general">
             <aside class="menu">
                     <div class="main-container-aside">
                        <div class="content-image">
-                           <img src="images/icons/car.svg" alt="" onload="loadImage()">
+                           <img src="images/icons/car.svg" alt="" >
                        </div>
             
                        <div class="content-form">
             
-                           <form action="#" target="target_blank">
+                           <form>
                                <b class="title-form">Filter your search</b>
                                
                               <div class="form-controls">
-                                    <select class="element" name="select">
-                                            <option value="value1">Value 1</option> 
-                                            <option value="value2" selected>Value 2</option>
-                                            <option value="value3">Value 3</option>
+                                    <select class="element" id="nameCitie" name="select">
+                                            <option value="Puerto Vallarta">Puerto Vallarta</option> 
+                                            <option value="Botanical Garden" selected>Botanical Garden</option>
+                                            <option value="Guadalajara">Guadalajara</option>
+                                            <option value="San Sebastian del Oeste">San Sebastian del Oeste</option>
+
                                     </select>
                                     <input class="element " type="text" placeholder="Pickup Location (address or location name)">
                                     <input class="element " type="date" placeholder="Tour date">
                                     <input class="element adult" type="number" class="input-adult" placeholder="Adults">
                                     <input class="element adult" type="number" class="input-children" placeholder="Childrens (age 0-12)">
-                                    <input class="submit-btn"type="submit" value="FILTER TOURS">
+                                    <button class="submit-btn"  onclick="filtrar()">FILTER TOURS </button>
+
+                                    
                                </div>
             
                            </form>
@@ -82,7 +86,7 @@
     <script>
         var contenido = document.querySelector('#contentTour')
          
-        function loadImage() {
+        function addList() {
 
                fetch('js/tours.json')
                .then(res => res.json())
@@ -93,15 +97,15 @@
 
 
        function tabla(datos) {
-               contenido.innerHTML = ''  
+        
+               contenido.innerHTML = ''                 
                    for(let valor of datos){
-                      console.log(valor)
                        contenido.innerHTML += `
                           
                        <div class="content-tour" >
                                   
                                   <div class="image-tour">
-                                     <img src="images/destination1.png" alt="">
+                                     <img src="${valor.ruta}" alt="">
                                  </div>
 
                                  <div class="data-tour">
@@ -115,7 +119,7 @@
 
                                  <div class="content-price">
                                      <b class="price-usd">
-                                          $50.00 USD
+                                            $${valor.cost}.00 USD
                                      </b>
 
                                      <div class="content-btn">
@@ -131,6 +135,70 @@
                    }
         }
 
+
+
+        function filtrar(){
+            fetch('js/tours.json')
+               .then(res => res.json())
+               .then(datos =>{
+                var citie = document.getElementById("nameCitie").value;   
+                var citie_1="Puerto Vallarta"     
+                contenido.innerHTML = ''   
+                   for(let valor of datos){
+                    
+                     
+                     if (citie == citie_1) {
+                              
+                       contenido.innerHTML += `
+                          
+                          <div class="content-tour" >
+                                     
+                                     <div class="image-tour">
+                                        <img src="images/destination1.png" alt="">
+                                    </div>
+   
+                                    <div class="data-tour">
+                                        <b class="data name"> ${valor.name}</b>
+                                        <b class="data includes"> TRIP INCLUDES</b>
+                                        <b class="data hours"> ${valor.hours} </b>
+                                        <b class="data pickup"> ${valor.pickup}  </b>
+                                        <b class="data complimentary">${valor.complimentary}</b>
+             
+                                    </div>
+   
+                                    <div class="content-price">
+                                        <b class="price-usd">
+                                               $${valor.cost}.00 USD
+                                        </b>
+   
+                                        <div class="content-btn">
+                                             BOOK
+                                        </div>
+   
+                                    </div>
+                                 </div>
+                          
+                          
+                          `
+                       
+
+
+                        console.log("entramos al if")
+                           }
+                           
+                     else {
+                            console.log("nop entramos al if")
+                      
+                      }
+
+
+                   }
+                
+
+               })
+
+
+        }
          </script>
 </body>
 </html>
