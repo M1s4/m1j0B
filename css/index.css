@@ -264,8 +264,7 @@
 
 
 
-    @media (min-width: 1200px) and (max-width: 1800px) {
-  
+    @media (min-width: 1200px) and (max-width: 2600px) { 
     
 
         body{
@@ -504,7 +503,7 @@
             top: 317px;
         }
             
-        }
+        
         .article-tripadvisor{
             width:100%;
             
@@ -693,6 +692,7 @@
         }
         .main-container-cities h3{
             font-family: "Source Sans Pro semibold";
+            text-align:center;
             font-size: 32px;
             color: #2A2A2A;
             display: inline-block;
@@ -719,6 +719,8 @@
         .content-citie {
             width: 308px;
             display: inline-block;
+            padding: 0px 16px;
+
         }
         
         .image-citie{
@@ -937,6 +939,8 @@
             width: 308px;
             border: 1px solid #19AC8A;
             display: block;
+            border-radius: 6px;
+
         }
 
         b.data-policy.booking {
@@ -950,6 +954,10 @@
         .policy-group p {
             width: 370px;
             display: flex;
+        }
+
+        .policy {
+            padding: 80px 80px;
         }
 
         
