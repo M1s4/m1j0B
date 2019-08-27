@@ -301,16 +301,7 @@
     
     }
     
-    .inner-content-info.right{
-        width: 632px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content:space-between;
-    
-        
-    
-    }
+  
     
      .inner-content-info .drivers{
        width:308px;
@@ -366,14 +357,7 @@
         margin-bottom: 87px;
     }
     
-    .content-coment{
-        max-width: 308px;
-        max-height: 200px;
-        border: 1px solid #19AC8A;
-        border-radius: 6px;
-        opacity: 1;
     
-    }
     
     .content-coment .coment{
         font-family: "SourceSansPro Regular";
@@ -477,6 +461,7 @@
     .content-citie {
         width: 308px;
         display: inline-block;
+        margin:0px 10px;
         margin:0px 10px;
     }
     
@@ -712,7 +697,6 @@
         display: flex;
     }
 
-    
         
       
     
@@ -900,6 +884,10 @@
 
     .main-container-cities {
         padding-top: 31px;
+        height: -webkit-fill-available;
+        padding: 0px;
+    margin: 0px;
+    height: 550px;
     }
 
     .main-container-cities b{
@@ -908,8 +896,8 @@
     }
 
     .content-citie {
-        width: 295px;
-        padding: 0px 40px;
+        width: 295px !important;
+        padding: 0px 0px;
          }
          .content-images-cities{
              padding-top:0px;
@@ -958,18 +946,40 @@
         }
 
         .content-coment {
-            margin:10px 0px;
+            max-width: 295px;
+            max-height: 220px;
+            border: 1px solid #19AC8A;
+            border-radius: 6px;
+            opacity: 1;
+            margin: 0px 7px;
         }
 
         .suscriber {
             margin-right: auto;
-    margin-left: auto;
-    width:265px;
+            margin-left: auto;
+            width:265px;
         }
         .policy-group p {
             width: 130px;
             display: flex;
             padding-left: 120px;
+        }
+
+        .data-client{
+            display:flex;
+            justify-content:space-between;
+        }
+        .stars-status{
+            display:flex;
+
+        }
+
+        .image-client {
+            display: flex;
+        }
+
+        .content-coment .coment{
+            width: 226px;
         }
 
 
