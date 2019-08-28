@@ -10,7 +10,7 @@
     <script src="js/main.js"></script>
     <title>Document</title>
 </head>
-<body>  
+<body >  
 
 
     <header>
@@ -27,7 +27,7 @@
                      </div>
                  </div>
     
-                 <div class="div-inner-menu center">
+                 <div class="div-inner-menu center" onclick="showModal()">
                       
                 </div>
     
@@ -136,7 +136,7 @@
         
                         </div>
         
-                        <div class="inner-content-info center">
+                        <div class="inner-content-info center" >
                                  <img class="tripadvisor-img" src="images/icons/tripadvisor_prize.svg" alt="">
                         </div>
         
@@ -413,6 +413,57 @@
     
       </div>
 
+      <div id="openModal" class="modalDialog">
+        <div class="menu-container modal">
+             <div class="div-inner-menu left ">
+                <div class="content-icon">
+                    <img src="images/icons/car.svg" alt="">
+                </div>
+                <div class="content-text">
+                   <h3>YOUR <b class="text-satysfy">friendly</b> PROFESSIONAL LOCAL DRIVER</h3>
+                </div>
+             </div>
+
+            <div class="div-inner-menu center modal" onclick="CloseModal()" >
+                 
+           </div>
+
+
+           
+            
+       </div>
+        <div class="menu-sections">
+            <div class="menu-section airport">
+                Airport Pickup
+            </div>
+            <div class="menu-section tours">
+                Private Tours
+             </div>
+             <div class="line-space">
+                 
+            </div>
+             <div class="menu-section booking">
+                Booking Policy
+             </div>
+             <div class="menu-section privacy">
+                Privacy Policy
+             </div>
+             <div class="menu-section follow">
+                Follow us in Facebook
+             </div>
+             <div class="menu-section private">
+                Private Tours
+             </div >
+             
+             
+             <div class="menu-section version">
+                VERSIÓN EN ESPAÑOL
+             </div>
+
+             
+        </div>
+      </div>
+
       <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
       <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
       <script type="text/javascript" src="js/slick/slick.min.js"></script>
@@ -472,6 +523,16 @@
         }
       ]
     });
+      </script>
+
+      <script>
+         function showModal() {
+            document.getElementById('openModal').style.display = 'block';
+           }
+
+        function CloseModal() {
+            document.getElementById('openModal').style.display = 'none';
+           }
       </script>
 
      
