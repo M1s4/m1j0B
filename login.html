@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+    <title>Bienvenido!</title>
+    
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+      <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    
+    <div class="main-container">
+         <div class="form-container">
+             <h3>¡REGISTRATE!</h3>
+                <div class="content-inputs">
+                    <input type="text" placeholder="email" id="email">
+                    <input type="password" placeholder="Contraseña" id="pass">
+                    <button class="login-btn" onclick="enviar()">ENVIAR</button>
+                </div>
+
+         </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-auth.js"></script>
+<script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyA6AUrsxmoi645-1yhv-F9W9G3q2_RKj44",
+          authDomain: "hackatonteleton.firebaseapp.com",
+          databaseURL: "https://hackatonteleton.firebaseio.com",
+          projectId: "hackatonteleton",
+          storageBucket: "hackatonteleton.appspot.com",
+          messagingSenderId: "730018138942",
+          appId: "1:730018138942:web:eb12fac2f91fb17f"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        //initialize authentication
+         const auth = firebase.auth();
+      </script>
+    <script src="main.js"></script>
+
+</body>
+</html>

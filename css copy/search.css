@@ -1,0 +1,180 @@
+@font-face {
+    font-family: "satisfy";
+    src: url("../fonts/Satisfy/Satisfy-Regular.ttf");
+  }
+
+@font-face{
+    font-family: "Source Sans Pro";
+    src: url("../fonts/SourceSansPro/SourceSansPro-ExtraLightItalic.ttf")
+}
+@font-face{
+    font-family: "Source Sans Pro semibold";
+    src: url("../fonts/SourceSansPro/SourceSansPro-SemiBold.ttf")
+}
+
+@font-face{
+    font-family: "Source Sans Pro bold";
+    src: url("../fonts/SourceSansPro/SourceSansPro-Bold.ttf")
+}
+
+@font-face{
+    font-family: "SourceSansPro Regular";
+    src: url("../fonts/SourceSansPro/SourceSansPro-Regular.ttf")
+}
+
+body{
+    margin:0px;
+    padding: 0px;
+}
+
+.main-container-aside{
+    width:440px;
+    height: 980px;
+    background-color: #F8F8F8;
+}
+
+.content-image img{
+    padding:40px 40px;
+}
+
+
+b.title-form {
+    font-family: "Source Sans Pro bold";
+    color: #771870;
+    /* display: block; */
+    /* text-align: center; */
+    padding-left: 40px;
+    font-size: 22px;
+}
+
+.form-controls {
+    width: 360px;
+    margin-left: 40px;
+}
+
+.form-controls .element {
+    display: block;
+    width: 100%;
+    border: 0px;
+    padding: 15px 0px;
+    font-family: "SourceSansPro Regular";
+    border-radius: 6px;
+    margin: 5px 0px;
+}
+
+input.submit-btn {
+    width: 180px;
+    background-color: #771870;
+    color: white;
+    padding: 15px;
+    font-family: "Source Sans Pro bold";
+    border-radius: 6px;
+    border: 0px;
+    margin-top: 20px;
+}
+
+.content-form {
+    border-left: 5px solid #771870;
+    margin-left: 2px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.content-section {
+    font-family: "Source Sans Pro bold";
+    color: #CCCCCC;
+    font-size: 22px;
+    /* text-align: center; */
+    padding: 20px 0px 20px 40px;
+}
+
+aside.menu {
+    display: inline-block;
+    width: 28%;
+}
+
+.main-container-general {
+    display: flex;
+}
+
+section.tours {
+    width: 100%;
+}
+
+.content-tours-list {
+    width: 830px;
+    padding: 80px 0px 0px 60px;
+}
+
+.title-content-tours {
+    font-family: "SourceSansPro Regular";
+    font-size: 32px;
+    font-weight: 100;
+    letter-spacing: 1.6px;
+    color: #2A2A2A;
+    display: inline-block;
+    margin: 80px 0px 0px 60px;
+}
+
+.content-tour {
+    display: flex;
+    width: 750px;
+    box-shadow: 0px 3px 6px #0000001a;
+    border-radius: 6px;
+    opacity: 1;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    margin-left: 40px;
+    padding: 15px 15px;
+    margin-bottom: 10px;
+}
+
+.data-tour {
+    width: 630px; 
+    padding-left: 10px;
+}
+
+.data {
+    display: block;
+    font-size: 12px;
+    font-family: "SourceSansPro Regular";
+    font-weight: 100;    
+}
+
+b.data.name {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+b.data.includes {
+    margin-bottom: 5px;
+}
+
+.content-price {
+    width: 100%;
+}
+
+
+.content-btn {
+    display: inline-block;
+    font-family: "Source Sans Pro bold";
+    font-size: 12px;
+    color: white;
+    background-color: #771870;
+    padding: 2px 7px 3px 8px;
+    font-weight: 100;
+    border-radius: 3px;
+    letter-spacing: 0.6px;
+}
+
+b.price-usd {
+    font-family: "SourceSansPro Regular";
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 160px;
+    padding-right: 20px;
+}
+
+input.element.adult {
+    width: 177px;
+    display: inline-block;
+}
