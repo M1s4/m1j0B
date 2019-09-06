@@ -1,5 +1,8 @@
 
 
+
+
+
 function enviar(){
     var correo = document.getElementById('email').value;
     var clave = document.getElementById('pass').value;
